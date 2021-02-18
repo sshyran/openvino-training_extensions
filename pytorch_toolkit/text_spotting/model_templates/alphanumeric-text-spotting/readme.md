@@ -8,8 +8,10 @@ Model that is able to detect and recognize alphanumeric text (figures and letter
 | text-spotting-0004 @ 1600x960 | 283.0               |  27.76    |  89.05% @ 0.75,0.45           | 72.29% @ 0.75,0.45           | 69.51% @ 0.75,0.45             | 76.29% @ 0.8,0.1               | 75.52% @ 0.8,0.1                | [model template](./text-spotting-0004/template.yaml), [snapshot](https://storage.openvinotoolkit.org/repositories/openvino_training_extensions/models/text_spotting/alphanumeric_text_spotting/text_spotting_0004/epoch_25.pth) | 1       |
 
 Metric value has following format: <metric_value> @ <detection_threshold>,<recognition_threshold>.
+
 *N - no lexicon was used.
-**G - (general)[https://drive.google.com/file/d/1XQsikiNY7ILgZvmvOeUf9oPDG4fTp0zs/view?usp=sharing] lexicon was used.
+
+**G - [general](https://drive.google.com/file/d/1XQsikiNY7ILgZvmvOeUf9oPDG4fTp0zs/view?usp=sharing) lexicon was used.
 
 ## Training pipeline
 
