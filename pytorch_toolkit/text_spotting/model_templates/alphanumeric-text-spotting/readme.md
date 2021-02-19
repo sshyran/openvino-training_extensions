@@ -11,7 +11,7 @@ Metric value has following format: <metric_value> @ <detection_threshold>,<recog
 
 *N - no lexicon was used.
 
-**G - [general](https://drive.google.com/file/d/1XQsikiNY7ILgZvmvOeUf9oPDG4fTp0zs/view?usp=sharing) lexicon was used.
+**G - [generic lexicon](https://drive.google.com/file/d/1XQsikiNY7ILgZvmvOeUf9oPDG4fTp0zs/view?usp=sharing) was used.
 
 ## Training pipeline
 
