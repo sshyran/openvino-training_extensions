@@ -33,9 +33,19 @@ def collect_hmeans(path):
 
 def coco_ap_eval_f1_wordspotting(config_path, work_dir, snapshot, update_config, show_dir='', **kwargs):
     """ Computes text spotting metrics """
-
-    metric_keys = ['f1', 'word_spotting']
-    metric_names = ['F1-score', 'Word Spotting']
+    metric_keys = ['f1',
+                   'word_spotting',
+                   'e2e_recognition',
+                   'word_spotting@lexicon_mapping=/lexicons/ic15/GenericVocabulary_pair_list.txt,lexicon=/lexicons/ic15/GenericVocabulary_new.txt',
+                   'e2e_recognition@lexicon_mapping=/lexicons/ic15/GenericVocabulary_pair_list.txt,lexicon=/lexicons/ic15/GenericVocabulary_new.txt'
+                   ]
+    metric_names = [
+                    'F1-score',
+                    'Word Spotting (N)',
+                    'End-to-End recognition (N)',
+                    'Word Spotting (G)',
+                    'End-to-End recognition (G)'
+                   ]
     outputs = []
     if not(update_config['data.test.ann_file'] and update_config['data.test.img_prefix']):
         logging.warning('Passed empty path to annotation file or data root folder. '
